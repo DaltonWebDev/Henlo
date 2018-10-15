@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no">
+<meta name="theme-color" content="#00ff00">
+<title>Henlo</title>
+<link href="https://henlo.xyz/static/style.css?version=0.7.2" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/boxicons@1.5.1/css/boxicons.min.css" rel="stylesheet">
+<style>
+.center, .emoji-fren {
+	margin: auto;
+	text-align: center;
+	width: 100%;
+}
+.emoji-fren {
+	font-size: 100px;
+}
+.user-info {
+	text-align: left;
+}
+img {
+	max-width: 100%;
+}
+.buttons, form[name=login] button, form[name=register] button, #feed .status form[name=like] button {
+	margin: auto;
+	width: 100%;
+	text-align: center;
+}
+#user button, #profile button {
+margin-top: 20px;
+	margin-bottom: 20px;
+}
+#characters {
+	margin-top: 4px;
+}
+#characters p {
+	margin-top: 20px;
+	font-size: 40px;
+}
+form[name=status] button {
+	margin-top: -10px;
+} 
+form[name=status] textarea {
+	padding-top: 0px;
+}
+body.night form[name=status] button {
+	color: #ffffff;
+}
+img.emoji {
+   height: 1em;
+   width: 1em;
+   margin: 0 .05em 0 .1em;
+   vertical-align: -0.1em;
+}
+#whispers .card {
+  max-width: 80%;
+  border-radius: 20px 20px 20px 0px;
+  margin-bottom: 20px;
+}
+
+#feed .card {
+  background: transparent;
+  box-shadow: none;
+  margin-bottom: 20px;
+}
+#feed-mode {
+	float: right;
+}
+#feed-mode {
+	background-color: transparent;
+	background-image: none;
+	box-shadow: none;
+	padding-right: 0px;
+	margin-top: 4px;
+}
+body.night #feed-mode {
+	color: #FFFFFF;
+}
+.domain, .username {
+	color: #000000;
+}
+
+body.night .domain, body.night .username {
+	color: #FFFFFF;
+}
+
+.profile-pic {
+margin-bottom: -10px;
+  margin-right: 40px;
+}
+.user-info {
+  display: inline-block;
+}
+table {
+	text-align: center;
+}
+#feed .status {
+	margin-bottom: 20px;
+}
+
+form[name=follow] button, form[name=like] button, form[name=login] button, form[name=register] button {
+	background-color: transparent;
+	box-shadow: none;
+	background-image: none;
+}
+
+button h2 {
+	font-size: 40px;
+	margin-top: 0em;
+	margin-bottom: -20px;
+}
+
+button p {
+	margin-bottom: 0em;
+}
+
+button, #user button, #feed button, #profile button {
+	color: #000000;
+}
+
+body.night button, body.night #user button, body.night #feed button, body.night #profile button {
+	color: #ffffff;
+}
+#user button {
+	background: transparent;
+	box-shadow: none;
+	padding: 0px;
+	color: #000000;
+}
+#user button:not(:last-child) {
+	margin-right: 20px;
+}
+.card.showprofile button, form[name=login] button, form[name=register] button {
+	margin-top: -20px;
+}
+#composestatus {
+	background-color: transparent;
+	box-shadow: none;
+	padding: 0px;
+}
+#welcome {
+	font-size: 150%;
+	text-align: center;
+	background: linear-gradient(124deg, #ff2400, #e81d1d, #e8b71d, #e3e81d, #1de840, #1ddde8, #2b1de8, #dd00f3, #dd00f3);
+background-size: 1800% 1800%;
+	color: #FFFFFF;
+	padding: 10px 20px;
+	border-radius: 10px;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	-webkit-animation: rainbow 18s ease infinite;
+-z-animation: rainbow 18s ease infinite;
+-o-animation: rainbow 18s ease infinite;
+  animation: rainbow 18s ease infinite;
+}
+.name {
+	display: inline-block;
+}
+.likes {
+	text-align: center;	
+}
+@-webkit-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-moz-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@-o-keyframes rainbow {
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+@keyframes rainbow { 
+    0%{background-position:0% 82%}
+    50%{background-position:100% 19%}
+    100%{background-position:0% 82%}
+}
+</style>
+</head>
+<body>
+<header>
+<h1><a href="https://henlo.xyz">Henlo</a></h1>
+</header>
+<main></main>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/markdown-it/8.4.2/markdown-it.js"></script>
+<script src="https://twemoji.maxcdn.com/2/twemoji.min.js?11.0"></script>
+<script src="https://henlo.xyz/static/core.js?v=1.2.7"></script>
+</body>
+</html>

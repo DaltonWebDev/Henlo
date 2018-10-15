@@ -1,0 +1,284 @@
+html, body {
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	-webkit-text-size-adjust: 100%;
+}
+body {
+	background-color: #EEEEEE;
+	color: #000000;
+}
+body.night {
+background-color: #323232;
+color: #FFFFFF;
+}
+a {
+	text-decoration: none;
+	color: #0000FF;
+}
+body.night a {
+	color: lightblue;
+}
+header {
+	background-color: #00FF00;
+	padding: 10px 20px;
+	margin-bottom: 10px;
+	text-align: center;
+	box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+header h1 {
+	font-size: 16px;
+	color: #000000;
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+main {
+	padding: 10px 20px;
+}
+input[type=text],
+input[type=password],
+textarea {
+	background: transparent;
+	margin-bottom: 20px;
+	font-size: 16px;
+	font-family: "Poppins", sans-serif;
+	width: 100%;
+	padding-left: 0px;
+	padding-right: 0px;
+	padding-bottom: 10px;
+	padding-top: 10px;
+	border-radius: 0px;
+	border-bottom: 2px solid #00FF00;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	box-sizing: border-box;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+}
+textarea {
+	height: 100px;
+	resize: none;
+	overflow: auto;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+button {
+	font-family: "Poppins", sans-serif;
+	cursor: pointer;
+	font-size: 16px;
+	outline: none;
+	border: none;
+	box-sizing: border-box;
+	color: #000000;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+button:active {
+	transform: scale(0.9, 0.9);
+	-webkit-transform: scale(0.9, 0.9);
+}
+button:focus {
+	outline: 0;
+}
+.message {
+	padding: 10px 20px;
+	border-radius: 10px;
+	margin-bottom: 20px;
+}
+.message p {
+	margin-top: 0em;
+	margin-bottom: 0em;
+}
+.message.error {
+	background-color: #FF0000;
+	color: #FFFFFF;
+}
+h2.title {
+	margin-top: 0em;
+}
+section {
+	margin-bottom: 40px;
+}
+
+.grid {
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: repeat(auto-fill, minmax(20em, 1fr));
+	grid-gap: 20px;
+}
+.grid2 {
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: repeat(auto-fill, minmax(18em, 1fr));
+	grid-gap: 20px;
+}
+.card {
+	background-color: #FFFFFF;
+	color: #000000;
+	box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+	border-radius: 10px;
+	padding: 10px 20px;
+}
+.form-card {
+}
+.card.user {
+	margin-bottom: 40px;
+}
+table {
+	margin-top: 20px;
+}
+table, td {
+	border-collapse: collapse;
+}
+table td+td {
+	border-left: 1px solid grey;
+}
+body.night table td+td {
+	border-left: 1px solid lightgrey;
+}
+.timeago {
+	color: grey;
+}
+body.night .timeago {
+	color: lightgrey;
+}
+body.night .card {
+	background: rgba(255,255,255,0.2);
+	color: #FFFFFF;
+}
+body.night input[type=text], body.night input[type=password], body.night textarea {
+	color: #FFFFFF;
+}
+.left {
+	float: left;
+}
+.right {
+	float: right;
+}
+#characters {
+	margin-top: 10px;
+}
+form[name=status] button {
+margin-bottom: 20px;
+}
+table {
+	width: 100%;
+}
+.profile-pic {
+	border-radius: 50px;
+	margin-top: 20px;
+}
+table td {
+	width: 33.33%;
+}
+.profile-pic {
+	background-color: rgba(0,0,0,0.1);
+}
+.profile-header {
+	color: #FFFFFF;
+    width: 100%;
+	padding: 10px 20px;
+	border-radius: 10px 10px 0px 0px;
+	margin-left: -20px;
+	margin-top: -10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.profile-header {
+	height: 150px;
+}
+progress {
+	height: 20px;
+	 -webkit-appearance: none;
+   appearance: none;
+}
+progress::-webkit-progress-bar {
+  background-color: rgba(0,0,0,0.1);
+  border-radius: 20px;
+}
+progress::-webkit-progress-value {
+border-radius: 20px;
+background-color: #00FF00;
+}
+progress.half::-webkit-progress-value {
+	background-color: orange;
+}
+progress.full::-webkit-progress-value {
+	background-color: red;
+}
+.card p, .card h2, .card h3, .status p, .status h2, .status h3 {
+	 white-space: initial;
+	-ms-word-break: break-all;
+	word-break: break-all;
+	word-break: break-word;
+}
+#whispers .card {
+	margin-bottom: 20px;
+}
+.icon-stack {
+		position: relative;
+	display: inline-block;
+		vertical-align: middle;
+}
+h2 .icon-stack {
+	width: 28px;
+	height: 28px;
+	line-height: 28px;
+}
+h3 .icon-stack {
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+}
+.icon-stack-1x, .icon-stack-2x, .icon-stack-3x {
+	position: absolute;
+	left: 0;
+	width: 100%;
+	text-align: center;	
+}
+h2 .icon-stack-1x {
+margin-top: 5px;
+	font-size: 20px;
+}
+h3 .icon-stack-1x {
+	margin-top: 4px;
+	font-size: 12px;
+}
+.icon-stack-2x {
+	font-size: 1.5em;
+}
+h2 .icon-stack-3x {
+	font-size: 28px;
+}
+h3 .icon-stack-3x {
+	font-size: 20px;
+}
+.bxs-certification {
+	color: #0000FF;
+}
+.bx-check {
+	color: #FFFFFF;
+}
+button {
+	background-image: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+}
+header h1 a {
+	color: #000000 !important;
+}
+#whispers .card {
+	text-align: left;
+}
+#whispers .profile-pic {
+	margin-bottom: 10px;
+}

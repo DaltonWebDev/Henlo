@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no">
+		<meta name="theme-color" content="#ffa500">
+		<title>sayhenlo</title>
+		<link href="https://fonts.googleapis.com/css?family=Poppins|Lobster" rel="stylesheet">
+		<link href="https://cdn.jsdelivr.net/npm/boxicons@1.7.1/css/boxicons.min.css" rel="stylesheet">
+		<style>
+			html, body {
+				margin: 0;
+				background-color: #eeeeee;
+				color: #000000;
+				font-family: "Poppins", sans-serif;
+				font-size: 18px;
+				-webkit-text-size-adjust: 100%;
+  				-webkit-overflow-scrolling: touch;
+			}
+			a {
+				text-decoration: none;
+				color: orange;
+			}
+			header {
+				margin-bottom: 10px;
+				background-color: orange;
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+				background-image: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+			}
+			header h1 {
+				padding-top: 5px;
+				margin-top: 0em;
+				margin-bottom: 10px;
+				font-size: 38px;
+				font-family: "Lobster", cursive;
+			}
+			header h1 a, header nav a {
+				color: #000000;
+			}
+			main {
+				padding: 10px 20px;
+			}
+			.profile {
+				margin-bottom: 20px;
+				background-color: #ffffff;
+				border-radius: 5px;
+				 box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			}
+			.profile-header {
+				height: 400px;
+				width: 100%;
+				background-image: url("https://media.giphy.com/media/l0HlGdXFWYbKv5rby/giphy.gif");
+				background-repeat: no-repeat;
+    			background-position: center;
+    			background-size: cover;
+    			border-radius: 5px 5px 0px 0px;
+			}
+			.profile-pic {
+				margin: auto;
+				margin-top: -100px;
+				width: 200px;
+				height: 200px;
+				background-image: url("https://media.giphy.com/media/l2Sq6FUOYclDt4m6A/giphy.gif");
+				background-color: rgba(0,0,0,0.5);
+				background-repeat: no-repeat;
+    			background-position: center;
+    			background-size: cover;
+    			border-radius: 5px;
+    			box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+			}
+			.status-info {
+				width: 100%;
+				text-align: center;
+			}
+			.profile-info {
+				width: 100%;
+ 			 	text-align: center;
+			}
+			.profile-username {
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+			.profile-username h2 {
+				padding-top: 0em;
+				padding-bottom: 0em;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				white-space: initial;
+				-ms-word-break: break-all;
+				word-break: break-all;
+				word-break: break-word;
+				font-weight: 100;
+			}
+			.profile-domain {
+				margin-top: -10px;
+			}
+			button {
+			font-size: 22px;
+				padding: 10px 20px;
+				color: #000000;
+				background-color: orange;
+				border: 0px;
+				border-radius: 5px;
+				font-family: "Poppins", sans-serif;
+				margin-top: 0em;
+				background-image: linear-gradient( rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.2));
+				box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+			}
+			button:hover {
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+				background-color: orange;
+				background-image: linear-gradient( rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.4));
+			}
+			button.transparent {
+				background-color: transparent;
+				padding: 0px;
+				box-shadow: none;
+			}
+			button:focus {
+				outline: 0;
+			}
+			.profile-following button {
+				font-size: 18px;
+				padding: 10px 20px;
+			}
+			.profile-stats {
+				margin-left: 20px;
+				margin-right: 20px;
+				margin-bottom: 20px;
+				overflow: auto;
+				text-align: center;
+			}
+			.profile-followers {
+				
+			}
+			.profile-following {
+				
+			}
+			.profile-status {
+				padding: 10px 20px;
+				background-color: #ffffff;
+				border-radius: 5px;
+				box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+			}
+			.status-like {
+				font-size: 15px;
+				vertical-align: middle;
+			}
+			.status-like button {
+				font-size: 18px;
+				width: 100px;
+				height: 100px;
+			}
+			.status-like p {
+				padding-top: 0em;
+				padding-bottom: 0em;
+			}
+			.button-count {
+				margin-left: 20px;
+				position: absolute;
+				font-size: 22px;
+				text-align: center;
+				color: #000000;
+				margin-top: 10px;
+				border-radius: 5px;
+			}
+			.profile-actions {
+				white-space: nowrap;
+  				-webkit-overflow-scrolling: touch;
+ 			 	-ms-overflow-style: -ms-autohiding-scrollbar; 
+ 			 	margin-bottom: 20px;
+			}
+			.profile-actions button {
+				margin-right: 0em;
+				margin-left: 0em;
+			}
+			.profile-actions button:not(:last-child) {
+				margin-right: 5px;
+			}
+			footer {
+				margin-left: 20px;
+				margin-right: 20px;
+				margin-bottom: 20px;
+			}
+			header, footer {
+				text-align: center;
+			}
+			table {
+				width: 100%;
+				margin-bottom: 20px;
+				background-color: rgba(0,0,0,0.1);
+				border-radius: 5px;
+				padding-top: 20px;
+				padding-bottom: 20px;
+			}
+			table td {
+				font-size: 18px;
+				width: 50%;
+				max-width: 50%;
+				padding: 10px 20px;
+			}
+			table td + td { 
+				border-left: 2px solid rgba(0,0,0,0.2); 
+			}
+			.bxs-check-circle {
+				color: #ffa500;
+			}
+			.bx {
+				vertical-align: middle;
+			}
+			.bxs-trash, .bxs-star {
+				font-size: 30px;
+				color: rgba(0,0,0,0.5);
+			}
+			.bx-flashing {
+				color: #00ff00;
+			}
+			.bxs-star {
+				color: orange;
+			}
+			.bx-user-plus {
+				font-size: 50px;
+			}
+			nav {
+				white-space: nowrap;
+  				overflow-x: auto;
+  				-webkit-overflow-scrolling: touch;
+ 			 	-ms-overflow-style: -ms-autohiding-scrollbar; 
+			}
+			nav a {
+				padding: 10px 20px;
+				display: inline-block;
+			}
+			nav .bx {
+				display: block;
+			}
+			.badge {
+				padding: 0px 10px;
+				border-radius: 5px;
+				color: #000000;
+				display: inline-block;
+			}
+			.status-actions .bx {
+				font-size: 38px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<h1><a href="https://sayhenlo.com">sayhenlo</a></h1>
+			<nav>
+				<a href="#" id="profile"><i class="bx bxs-user-circle"></i> <span class="badge">Profile</span></a>
+				<a href="#" id="feed"><i class="bx bxs-news"></i> <span class="badge">Feed</span></a>
+			<a href="#" id="notifications"><i class="bx bxs-bell"></i> <span class="badge">12,345</span></a>
+				<a href="#" id="settings"><i class="bx bxs-cog"></i> <span class="badge">Settings</span></a>
+				<a href="#" id="logout"><i class="bx bx-power-off"></i> <span class="badge">Logout</span></a>
+			</nav>
+		</header>
+		<main>
+			<h2>Profile</h2>
+				<div class="profile">
+					<div class="profile-header"></div>
+					<div class="profile-pic"></div>
+					<div class="profile-info">
+						<div class="profile-username"><h2>dalton <i class="bx bxs-check-circle"></i></h2></div>
+					</div>
+					<div class="profile-stats">
+						<table>
+  							<tr>
+    							<td><b>5,555</b> followers</td>
+    							<td><b>5,555</b> following</td>
+  							</tr>
+						</table>
+						<div class="profile-actions">
+							<button type="button" id="follow"><i class="bx bxs-bolt"></i> Follow</button>
+						</div>
+					</div>
+				</div>
+				<div class="profile-status">
+					<p>Hey!</p>
+					<div class="status-actions">
+						<button type="button" class="transparent"><i class="bx bx-star"></i> 102</button>
+					</div>
+					<div class="status-stats"><p>3 days ago via <a href="https://sayhenlo.com" target="_blank">sayhenlo.com</a></p></div>
+				</div>
+		</main>
+		<footer>
+			<p><a href="https://dewdd.com" target="_blank">Dalton Edwards Web Development and Design</a> © 2018</p>
+		</footer>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script>
+		 $('header nav a').click(function(){
+		 	var clicked = $(this).attr('id');
+		 	if (clicked === 'feed') {
+		 		$('main').html('<h2>Feed</h2>');
+		 	} else if (clicked === 'notifications') {
+		 		$('main').html('<h2>Notifications</h2>');
+		 	} else if (clicked === 'settings') {
+		 		$('main').html('<h2>Settings</h2>');
+		 	} else if (clicked === 'logout') {
+		 		$('main').html('<h2>Logout</h2>');
+		 	} else {
+		 		// Profile
+		 	}
+ 		});
+		</script>
+	</body>
+</html>
